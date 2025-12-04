@@ -9,7 +9,6 @@ body {
     --secondary-color:#98bfc4; 
     --text-color:#f2f2f2;
     --light-bg: #858585;
-    --transition-speed: .5s;
 }
 
 
@@ -117,7 +116,15 @@ ul {
     list-style-type: none;
 }
 
+.list{
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #2b3a35;
+    border-radius: 10px;
+    background: #f2f2f2;
+    color: #2b3a35;
 
+}
 
 .stix-two-text{
   font-family: "STIX Two Text", serif;
