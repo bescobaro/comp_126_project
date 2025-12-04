@@ -2,6 +2,8 @@ body {
     font-family: "Georgia";
     background: #98bfc4;
     padding: 40px;
+    margin: 0;
+
 }
 
 :root {
@@ -15,10 +17,16 @@ body {
 header{
     margin-bottom: 40px;
     color: var(--primary-color);
+
 }
 
 h1, h2, h3, h4{
     font-family: "STIX Two Text", serif;
+    color: var(--primary-color);
+}
+
+h1{
+    text-align: center;
 }
 
 
@@ -96,6 +104,7 @@ h1, h2, h3, h4{
     margin-bottom: 20px;
     cursor: pointer;
     transition: 0.3s;
+    text-align: center;
 }
 
 .header .btn:hover {
@@ -123,8 +132,10 @@ ul {
     border-radius: 10px;
     background: #f2f2f2;
     color: #2b3a35;
+    text-align: center;
 
 }
+
 
 .stix-two-text{
   font-family: "STIX Two Text", serif;
