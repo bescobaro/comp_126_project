@@ -1,8 +1,7 @@
-document.getElementById('menu-toggle').onclick = function() {
-    const nav = document.getElementById('navigation');
-    const button = this;
-    button.classList.toggle('open');
-    nav.classList.toggle('open');
-    const isExpanded = button.getAttribute('aria-expanded') === 'true' || false;
-    button.setAttribute('aria-expanded', !isExpanded);
-};
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("navigation");
+
+toggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+});
+

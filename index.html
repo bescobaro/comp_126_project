@@ -4,45 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Final Project</title>
 
-        <nav id="navigation" class="navigation">
-            <ul>
-                <li><a href="index.html" class="stix-two-text">Home</a></li>
-                <li><a href="about.html" class="stix-two-text">About</a></li>
-                <li><a href="contact.html" class="stix-two-text">FAQ</a></li>
-            </ul>
-        </nav>
-
-
-    <h1>UNC Latino Community</h1>
-    <h2>Here are some resources to check for ICE activity</h2>
-    <h3>We want to share this information to support our community and ensure that every family is informed and safe. We ask that you share this information so that more families can be aware and prepared.</h3>
-    <li class="list">
-        <p><a href="https://ojonc.org/">https://ojonc.org/</a></p>
-        <p><a href="https://iceout.org/en/">https://iceout.org</a></p>
-        <p>Text JUNTAR or JOIN to 980-336-4996 to
-    <p>Ojo NC: https://ojonc.org/<p>
-    <p>ICE Out: https://iceout.org/en/</p>
-    <p>Carolina Migrant Network: Text JUNTAR or JOIN to 980-336-4996 to receive updates when ICE is spotted.</p>
-    <p>Siembra NC: To receive alerts, text SIEMBRA to 336-388-8836.</p>
-    <p>(Note: After sending the message, it will take approximately 2 minutes to receive a response with a few questions.)</p>
-    </li>
-</body>
-<footer class="footer">
-        <p>&copy; 2025 Comp 126 All rights reserved.</p>
+</head>
+<body>
+    <div class="log"></div>
+    <div class="hamburger" id="hamburger">
+        &#9776;
+    </div>
+<nav id="navigation" class="navigation">
+    <ul>
+        <li><a class="comic-relief-regular" href="index.html">Home</a></li>
+        <li><a class="comic-relief-regular" href="about.html">About</a></li>
+        <li><a class="comic-relief-regular" href="contact.html">FAQ</a></li>
+    </ul>
+</nav>
+<div class="main-content main-page">
+        <h1>UNC Latino Community</h1>
+        <h2>Here are some resources to check for ICE activity</h2>
+        <h3>We want to share this information to support our community and ensure that every family is informed and safe. We ask that you share this information so that more families can be aware and prepared.</h3>
+        <li class="list">
+            <p>Ojo NC: <a href= "https://ojonc.org/">https://ojonc.org/</a></p>
+            <p>ICE Out: <a href= "https://iceout.org/en">https://iceout.org/en</a></p>
+            <p>Carolina Migrant Network: Text JUNTAR or JOIN to 980-336-4996 to receive updates when ICE is spotted.</p>
+            <p>Siembra NC: To receive alerts, text SIEMBRA to 336-388-8836.</p>
+            <p>(Note: After sending the message, it will take approximately 2 minutes to receive a response with a few questions.)</p>
+        </li>
+    </div>
+    <div>
+        <h2>Here are ways you can identify ICE officers:</h2>
+        <li class="list">
+            <h3>ICE officers usually wear dark blue uniforms with "ICE" written on them. They may also wear plain clothes but will have badges or identification.</h3>
+            <img src="img/ice_ppl.jpg" alt="ICE officers in uniform.">
+        </li>
+        <div class="list">
+            <h3>ICE vehicles are typically white vans or SUVs with "ICE" markings. They may also use unmarked vehicles.</h3>
+            <img src="img/ice_vehicles.jpg" alt="ICE vehicles.">
+            <img src="img/ice_undercover.jpg" alt="Undercover ICE vehicle.">
+            <p> All images courtesy of @siembranc, 2025</p>
+        </div>
+    </div>
+    <footer class="footer">
+    <p>&copy; 2025 Comp 126 All rights reserved.</p>
 </footer>
-<script>
-    document.getElementById('menu-toggle').onclick = function() {
-        const nav = document.getElementById('navigation');
-        const button = this;
-        button.classList.toggle('open');
-        nav.classList.toggle('open');
-        const isExpanded = button.getAttribute('aria-expanded') === 'true' || false;
-        button.setAttribute('aria-expanded', !isExpanded);
-    };
-</script>
+    <script src="script.js"></script>
+
+</body>
 </html>
+

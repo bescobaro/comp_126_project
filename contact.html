@@ -6,84 +6,99 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" href="styles.css">
+<link rel = "stylesheet" href="styles.css">
     <title>Final Project</title>
+</head>
+<body>
+    <div class="log"></div>
+    <div class="hamburger" id="hamburger">
+        &#9776;
+    </div>
+
+<nav id="navigation" class="navigation">
+    <ul>
+        <li><a class="comic-relief-regular" href="index.html">Home</a></li>
+        <li><a class="comic-relief-regular" href="about.html">About</a></li>
+        <li><a class="comic-relief-regular" href="contact.html">FAQ</a></li>
+    </ul>
+</nav>
 
 
-    <nav id="navigation" class="navigation">
-            <ul>
-                <li><a href="index.html" class="comic-relief-regular">Home</a></li>
-                <li><a href="about.html" class="comic-relief-regular">About</a></li>
-                <li><a href="contact.html" class="comic-relief-regular">FAQ</a></li>
-            </ul>
-        </nav>
-
-
-<main class="main-content main-page">
-    
+    <main class="main-content main-page">   
     <section id="contact-area">
-        <h1 class="container">Contact Us</h1>
-        <h2 class="container">Please reach out if you have any additional questions, comments, or concerns! Fill out the form.</h2>
+        <h1>Contact Us</h1>
+        <h2>Please reach out if you have any additional questions, comments, or concerns! Fill out the form.</h2>
+        <form id="contact-form">
+
                 <div class="form-group">
-                    <label for="name" class="container"><h3>Your name</h3></label>
+                    <label for="name"><h4>Your name:</h4></label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="email" class="container">Email</label>
+                    <label for="email"><h4>Email:</h4></label>
                     <input type="email" id="email" name="email" required>
                 </div>
 
                 <div class="questions">
-                    <label for="questions" class="container">Questions</label>
-                    <input type="text" id="questions" name="questions" required>
+                    <label for="questions"><h4>Questions:</h4></label>
+                    <textarea id="questions" name="questions" rows="4" required></textarea>
                 </div>
 
                 <div class="form-actions">
-                <button type="submit" class="submit-button jacquard-24-regular">Submit</button>
+                <button type="submit">Submit</button>
                 </div>
-
             </form>
         </section>
-        
-    <section class="faq-section">
-        <h2 class="container">Frequently Asked Questions</h2>
-        <details class="faq-item">
-            <summary class="container">Who can be deported?</summary>
-                <p>Any person residing in the U.S. who is not a citizen is subject to deportation, including Lawful Permanent Residents and visa holders. Those non-citizens convicted of certain crimes face the highest risk of removal and may also be barred from adjusting their legal status or returning to the country after travel.</p>
-        </details>
 
-        <details class="faq-item">
-            <summary class="container">Can US Citizens be Deported?</summary>
-                <p>US citizens cannot be deported. Deportation (formal removal from the country) is a process strictly applied to non-citizens.</p>
-                <p>However, a naturalized citizen is subject to a rare legal process called denaturalization. The government can attempt to revoke the citizenship of a naturalized citizen.</p>
-                <p>If a person's citizenship is successfully stripped through denaturalization, they revert to the status of a lawful permanent resident or foreign national and may then become vulnerable to deportation proceedings.</p>
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+            <details class="faq-item">
+                <summary>Who can be deported?</summary>
+                    <p>Any person residing in the U.S. who is not a citizen is subject to deportation, including Lawful Permanent Residents and visa holders. Those non-citizens convicted of certain crimes face the highest risk of removal and may also be barred from adjusting their legal status or returning to the country after travel.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Can US Citizens be Deported?</summary>
+                    <p>US citizens cannot be deported. Deportation (formal removal from the country) is a process strictly applied to non-citizens.</p>
+                    <p>However, a naturalized citizen is subject to a rare legal process called denaturalization. The government can attempt to revoke the citizenship of a naturalized citizen.</p>
+                    <p>If a person's citizenship is successfully stripped through denaturalization, they revert to the status of a lawful permanent resident or foreign national and may then become vulnerable to deportation proceedings.</p>
             </details>
 
         <details class="faq-item">
-            <summary class="container">How can I get more involved in my community?</summary>
+            <summary>How can I get more involved in my community?</summary>
             <p>If you are looking to support and empower the immigrant community in North Carolina, consider joining Siembra NC.</p>
             <p>This community organization provides essential resources and the latest updates regarding ICE activities across the state. Furthermore, Siembra NC facilitates smaller chapters at various universities, offering students a way to make an impact right on their campus. Members can volunteer with the organization and receive valuable training, including how to identify ICE officers and effectively support immigrant rights.</p>
         </details>
-    </section>
 
+        <details class="faq-item">
+            <summary>Where to Report ICE Sightings?</summary>
+            <p>📞 704-457-5269<p>
+            <p>You can call to report ICE sightings; they will verify the information.</p>
+            <p>You can also report ICE sightings through the Siembra NC website.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Should I be careful reporting ICE sightings?</summary>
+            <p>Yes, always verify information before sharing it.</p>
+            <p>Inaccurate reports create unnecessary fear in the community.</p>
+            <p>Beware of false reports.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>What to do if ICE comes to my door?</summary>
+            <p>Contact in case of detention or arrest by ICE:</p>
+            <p>If you need an emergency immigration attorney in Durham today, you can contact: 📞 984-260-8604</p>
+        </details>
+    </section>
 </main>
 
 <footer class="footer">
-        <p>&copy; 2025 Comp 126 All rights reserved.</p>
+     <p>&copy; 2025 Comp 126 All rights reserved.</p>
 </footer>
-
-
-<script>
-    document.getElementById('menu-toggle').onclick = function() {
-        const nav = document.getElementById('navigation');
-        const button = this;
-        button.classList.toggle('open');
-        nav.classList.toggle('open');
-        const isExpanded = button.getAttribute('aria-expanded') === 'true' || false;
-        button.setAttribute('aria-expanded', !isExpanded);
-    };
-</script>
+    <script src="script.js"></script>
+</body>
 </html>
 
 

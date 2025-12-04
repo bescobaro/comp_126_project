@@ -29,6 +29,41 @@ h1{
     text-align: center;
 }
 
+.menu-toggle{
+    display: none;
+    background-color: transparent;
+    border: none;
+    size: 32px;
+    color: var(--primary-color);
+    cursor: pointer;
+    margin: 10px;
+}
+
+@media(max-width: 768px){
+    .menu-toggle{
+        display: block;
+    margin-bottom: 10px;}
+
+    .navigation ul{
+        flex-direction: column;
+        gap: 15px  ;
+        display: none;
+        background: var(--primary-color);
+        padding: 20px 0;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .navigation.open ul{
+        display: flex;
+    }
+    
+    .navigation ul li a{
+        font-size: 20px;
+        background: var(--primary-color);
+        border-radius: 10px;
+        }
+    }
 
 .area { 
     display: flex; 
@@ -36,11 +71,17 @@ h1{
     align-items: center; 
 }
 
+a:hover{
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
 
 .navigation {
     margin-bottom: 20px;
     padding: 15px;
     border-color: #2b3a35;
+    text-align: center;
+    color: white;
 }
 
 .navigation ul {
@@ -48,18 +89,16 @@ h1{
     gap: 30px;
     padding-left: 0;
     color: var(--text-color);
-    transition: var(--transition-speed);
-    background: var(--transition-speed);
-    border-color:  var(#2b3a35);
+    justify-content: center;
+    align-items: center;
 }
 
 .navigation ul li a {
     text-decoration: none;
     color: var(--text-color);
-    border-color: var(#2b3a35);
     border-width:5px;
     font-size: 22px;
-    transition: var(--transition-speed);
+    transition: .3s;
 }
 
 .comic-relief-regular {
@@ -133,9 +172,9 @@ ul {
     background: #f2f2f2;
     color: #2b3a35;
     text-align: center;
-
+    text-decoration: none;
+    list-style-type: none;
 }
-
 
 .stix-two-text{
   font-family: "STIX Two Text", serif;
@@ -152,9 +191,134 @@ ul {
   font-style: normal;
 }
 
+img {
+    max-width: 75%; 
+    height: auto;   
+    display: block;  
+    margin: 10px auto;
+}
+
+.ice-car {
+    width: 300px; 
+    height: auto; 
+}
+
+.undercover-car {
+    width: 400px; 
+    height: auto; 
+}
+
+#contact-area{
+    margin-top: 30px;
+    text-align: center;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 15px;
+    border: #267983 2px solid;
+    margin-bottom: 20px;
+}
+form h4{
+    text-align: left;
+    margin-bottom: 5px;
+    color: #2b3a35;
+}
+input, textarea{
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #267983;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
 
 
-faq section
+
+button[type="submit"] {
+    background: var(--secondary-color);
+    color: white;
+    border: 5px solid #267983;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "STIX Two Text", serif;
+}
+
+button[type="submit"]:hover {
+    background: var(--light-bg);
+}
+
+.form button:hover{
+    background: #2b3a35;
+    color: var(--text-color);
+}
+
+.submit-btn {
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    font-family: "STIX Two Text", serif;
+    border-color: var(--secondary-color);
+}
+
+.faq-section {
+    margin-top: 40px;
+    padding: 20px;
+    max-width: 700px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--light-bg);
+    padding-bottom: 10px;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.faq-item p{
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.summary {
+    font-weight: bold;
+    font-family: "STIX Two Text", serif;
+    cursor: pointer;
+}
+
+
+
 
 
 .footer {
