@@ -1,0 +1,28 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+root {
+    --primary-color:#2b3a35;
+    --secondary-color:#98bfc4; 
+    --text-color:#f2f2f2;
+    --light-bg: #858585;
+    --transition-speed: .5s;
+}
+
+
+.stix-two-text-<uniquifier> {
+  font-family: "STIX Two Text", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+.newsreader-<uniquifier> {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}

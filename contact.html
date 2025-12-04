@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel = "stylessheet" href="comp_126_project/styles.css">
+    <title>Final Project</title>
+</head>
+<body>
+   <header class="title">
+    <div class="area">
+        <h1 class="logo comic-relief-bold">a marvelous website</h1>
+        
+        <button id="menu-toggle" class="menu-area" aria-expanded="false" aria-controls="navigation">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+        </button>
+
+        <nav id="navigation" class="navigation">
+            <ul>
+                <li><a href="#" class="comic-relief-regular">Welcome</a></li>
+                <li><a href="#" class="comic-relief-regular">About</a></li>
+                <li><a href="#" class="comic-relief-regular">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main-content">
+    
+    <section id="welcome-area" class="welcome-area">
+        <h2 class="comic-relief-bold">Resources</h2>
+        <p class="comic-relief-regular">Here are more additional information</p>
+        <button class="welcome-button jacquard-24-regular">learn more</button>
+    </section>
+
+    <section id="form-section" class="form-section">
+            <form id="contact-form">
+                <h3 class="comic-relief-bold">Join our mailing list for updates about recent ICE activity</h3>
+                <div class="form-group">
+                    <label for="name" class="comic-relief-regular">Your name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="comic-relief-regular">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                
+                <div class="form-actions">
+                <button type="submit" class="submit-button jacquard-24-regular">Submit</button>
+                </div>
+            </form>
+        </section>
+    <section id="images-section" class="images-section">
+            <div class="image-gallery">
+                <div class="image-container">
+                    <img src="https://media.tenor.com/tsoqdGZxzScAAAAM/stupid-hamster-hamster-meme.gif" alt="Stupid Hamster" class="responsive-image">
+                </div>
+                <div class="image-container">
+                    <img src="https://media.tenor.com/nz4KSadKrGIAAAAM/love-you-hamster.gif" alt="Love Hamster" class="responsive-image">
+                </div>
+                <div class="image-container">
+                    <img src="https://media.tenor.com/7XTD4canDtcAAAAe/hamster-drawing.png" alt="Hamster Drawing" class="responsive-image">
+                </div>
+            </div>
+        </section>
+</main>
+<footer class="footer">
+    <p class="jacquard-24-regular">&copy; comp 126</p>
+</footer>
+<script>
+    document.getElementById('menu-toggle').onclick = function() {
+        const nav = document.getElementById('navigation');
+        const button = this;
+        button.classList.toggle('open');
+        nav.classList.toggle('open');
+        const isExpanded = button.getAttribute('aria-expanded') === 'true' || false;
+        button.setAttribute('aria-expanded', !isExpanded);
+    };
+</script>
+</html>
+
+
+
+
